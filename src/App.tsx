@@ -6,6 +6,8 @@ import BlogPost from "./components/BlogPost";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Followers from "./components/Followers";
+import SingleBlog from "./components/SingleBlog";
 
 const AppRouter = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ const AppRouter = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/followers",
+        element: <Followers />,
+      },
+      {
+        path: "/singleblog",
+        element: <SingleBlog />,
       },
     ],
   },

@@ -29,6 +29,7 @@ const BlogContainer = () => {
         blogs.map((b: Data) => (
           <BlogCard
             key={b._id}
+            id={b._id}
             author={b.blog_author}
             content={b.blog_content}
           />
